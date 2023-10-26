@@ -15,13 +15,12 @@ public class ProdutoDTO {
     private String descricao;
     private Double preco;
     private Integer quantidade;
-    private int codigoVrs;
+
 
     public ProdutoDTO(Produto produto) {
         this.codigo = produto.getCodigo();
         this.descricao = produto.getDescricao();
         this.preco = produto.getPreco();
         this.quantidade = produto.getQuantidade();
-        this.codigoVrs = produto.getCodigoVrs();
     }
 }

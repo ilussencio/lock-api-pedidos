@@ -19,14 +19,10 @@ public class Produto {
     private Double preco;
     private Integer quantidade;
 
-    @Version
-    private int codigoVrs;
-
     public Produto(ProdutoDTO produtoDTO){
         this.codigo = produtoDTO.getCodigo();
         this.descricao = produtoDTO.getDescricao();
         this.preco = produtoDTO.getPreco();
         this.quantidade = produtoDTO.getQuantidade();
-        this.codigoVrs = produtoDTO.getCodigoVrs();
     }
 }

@@ -22,7 +22,7 @@ def send_post_request(url, data):
 #url = "http://localhost:8765/lock-optimistic/api/v1/pedidos"
 url = "http://localhost:8765/lock-pessimistic/api/v1/pedidos"
 
-num_requests = 2000
+num_requests = 1000000
 
 with concurrent.futures.ThreadPoolExecutor() as executor:
     for _ in range(num_requests):
